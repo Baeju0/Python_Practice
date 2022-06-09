@@ -19,22 +19,22 @@ print(5%2)
 print(5//2)
 
 # ** 거듭 제곱
-print(5 ** 2)
+print(5**2)
 
 
 # 비교 연산자
 
 # > 크다
-print(5 > 2)
+print(5>2)
 
 # >= 크거나 같다
-print(5 >= 2)
+print(5>=2)
 
 # < 작다
-print(5 < 2)
+print(5<2)
 
 # <= 작거나 같다
-print(5 <= 2)
+print(5<=2)
 
 # == 같다
 print(5==2)
