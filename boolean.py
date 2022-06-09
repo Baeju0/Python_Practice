@@ -6,10 +6,6 @@
 # 값이 없으면 False
 
 # 문자 자료형 ex)
-from doctest import FAIL_FAST
-from tkinter.messagebox import NO
-
-
 a = 'hello!'
 b = '  '
 c = ''
