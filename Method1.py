@@ -34,3 +34,5 @@ print(letter.split())
 # how가 몇 번 쓰였는지?
 print(letter.count('how'))
 # >> 1
+
+# _commit -m 정정
