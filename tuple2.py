@@ -25,4 +25,5 @@ numbers = (1,2,3,4,5,6,7,8,9,10)
 (*others,nine,ten) = numbers
 # nine에는 9, ten에는 10 들어가고, 나머지는 others에 들어감
 
-(*others,nine,ten) = numbers
+(one,*others,ten) = numbers
+# one에는 1, 중간 숫자들은 others, ten에는 10이 들어감
