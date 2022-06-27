@@ -42,3 +42,6 @@ dictionary = {key:value}
 # 수정 o (value 값만)
 # 추가 dictionary[key]= value, update()
 # 삭제 pop(), popitem(), clear() 
+
+
+# _commit -m 정정
