@@ -35,4 +35,4 @@ print(letter.split())
 print(letter.count('how'))
 # >> 1
 
-# _commit -m 정정
+# _commit -m 정정_2
