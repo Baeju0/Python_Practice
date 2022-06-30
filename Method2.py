@@ -36,3 +36,6 @@ print(j.find('스크립트'))
 print(j.center(10,'-'))
 
 # google, python 내장형
+
+
+# _commit -m 정정
