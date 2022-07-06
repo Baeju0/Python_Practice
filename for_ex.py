@@ -12,7 +12,7 @@ for x in my_list:
 # 튜플
 my_tuple = (1,2,3)
 for y in my_tuple:
-    print(x)
+    print(y)
 # >> 1
 # 2
 # 3
@@ -36,7 +36,7 @@ for k,v in person.items():
 # 문자열
 fruit = 'apple'
 for z in fruit:
-    print(x)
+    print(z)
 # >> a
 # p
 # p
