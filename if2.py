@@ -30,3 +30,14 @@ else:
 print('공부 시작!')
 
 # if와 else 사이에 elif 조건은 얼마든지 추가 가능!
+c2 = 15 * 5
+d2 = 15 + 15 + 15 + 15 + 15
+if c2 > d2:
+    print('c is greater than d')
+elif c2 == d2:
+    print('c is equal to d')
+elif c2 < d2:
+    print('c is less than d')
+else:
+    print('I don\'t know')
+# c2와 d2 값 같음
