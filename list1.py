@@ -14,4 +14,30 @@ empty_list = [] # 빈 리스트 생성 가능!
 
 
 
+# list 안의 list?
+a_list = [1,2,3, ['a','b','c']]
+
+print(a_list[0])
+# >> 1
+
+print(a_list[-1])
+# >> ['a','b','c']
+
+print(a_list[3])
+# >> ['a','b','c']
+
+# a_list에 포함된 ['a','b','c']리스트에서 'a'값 가져오기
+print(a_list[-1][0])
+# >> 'a'
+
+# 'b'값 가져오기
+print(a_list[-1][1])
+# >> 'b'
+
+# 'c'값 가져오기
+print(a_list[-1][2])
+# >> 'c'
+
+
+
 # _commit -m 정정
