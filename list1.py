@@ -39,5 +39,13 @@ print(a_list[-1][2])
 # >> 'c'
 
 
+# 삼중 list 인덱싱
+# ex)
+a3_list = [1,2, ['a','b',['Apple','Banana']]]
+# Q. 'Apple'문자열만 출력?
+print(a3_list[2][2][0])
+# >>'Apple'
+
+
 
 # _commit -m 정정
