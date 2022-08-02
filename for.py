@@ -11,3 +11,27 @@
  # x는 임의의 값이며 원하는 이름으로 지정 가능
 for x in range(10):
     print(f'팔 벌려 뛰기 {x}회')
+
+
+# ex) 기본 for문
+test_list = ['one','two','three']
+for i in test_list :
+    print(i)
+
+# ex) 튜플 for문
+a3 = [(1,2),(3,4),(5,6)] # 첫번째 값과 마지막 값 +
+for (first, last) in a3 :
+    print(first + last)
+# >> 3 7 11
+
+# ex) 응용 for문
+# 총 5명의 학생, 시험 점수가 60점이 넘으면 합격 그렇지 않으면 불합격
+marks = [90, 25, 67, 45, 80]
+
+number = 0
+for mark in marks :
+    number = number +1
+    if mark >= 60 :
+        print("%d번 학생, 합격!" %number)
+    else :
+        print("%d번 학생, 불합격!" %number)
