@@ -1,5 +1,6 @@
 # continue
 
+# ex)
 drama1 = ['시즌1','시즌2','시즌3','시즌4','시즌5']
 # 시즌3 재미없어!
 
@@ -21,3 +22,15 @@ for x in drama1 :
 # >> 건너뛰기!
 # >> 시즌4 시청
 # >> 시즌5 시청
+
+# ex)
+marks2 = [90, 25, 67, 45, 80]
+
+number = 0
+for mark in marks2 :
+    number = number +1
+    if mark < 60 :
+        continue
+    print("%d번 학생! 합격!"%number)
+# 점수가 60점 이하인 학생일 경우, mark < 60이 참이 되어 continue문 수행
+# 따라서 print 수행하지 않고 for문의 처음으로 돌아감
