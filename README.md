@@ -1,4 +1,3 @@
 # Python_Practice     
      
-1. 자료형     
-2. 변수
+python 기초
