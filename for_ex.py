@@ -8,6 +8,29 @@ for x in my_list:
 # 2
 # 3
 
+# ex)
+list_com = [1,2,3,4]
+result = []
+for num in list_com :
+    result.append(num*3)
+print(result)
+# >> [3,6,9,12]
+
+# 위의 예제를 리스트 안에 for문 포함하는 리스트 내포(list comprehension) 사용하기
+list_com = [1,2,3,4]
+result = [num * 3 for num in list_com]
+print(result)
+# >> [3,6,9,12]
+
+# [1,2,3,4] 중에서 짝수에만 3을 곱하여 담고 싶어요! 리스트 내포 안에 if 조건 사용하기
+list_com = [1,2,3,4]
+result = [num * 3 for num in list_com if num % 2 == 0]
+print(result)
+# >> [6, 12]
+
+# 리스트 내포 문법 (여러 개 사용도 가능하다)
+# [표현식 for 항목1 in 반복가능객체1 if 조건문1]
+
 
 # 튜플
 my_tuple = (1,2,3)
