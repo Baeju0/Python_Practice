@@ -31,6 +31,11 @@ print(result)
 # 리스트 내포 문법 (여러 개 사용도 가능하다)
 # [표현식 for 항목1 in 반복가능객체1 if 조건문1]
 
+# 리스트 내포 사용하여 구구단 만들기
+result = [x*y for x in range(2,10)
+              for y in range(1,10)]
+print(result)
+# >> 구구단 출력
 
 # 튜플
 my_tuple = (1,2,3)
