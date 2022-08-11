@@ -41,6 +41,13 @@ for i in range(1,101):
 
 # Q. 총 10명의 학생, for문 사용해 학급의 평균 점수 구하기
 #   [70,60,55,75,95,90,80,80,85,100]
+score = [70,60,55,75,95,90,80,80,85,100]
+p1 = 0
+
+for p in score :
+    p1 += p
+aver = p1/10
+print(aver)
 
 
 # Q. 아래 내용은 리스트 중에 홀수에만 2를 곱해 저장하는 코드
@@ -49,4 +56,10 @@ result1 = []
 for n in numbers:
     if n % 2 == 1:
         result1.append(n*2)
+# >> [2,6,10]
+
 # 위 코드를 리스트 내포를 사용하여 표현하기
+# 리스트 내포 [표현식 for 항목 in 반복가능객체 if 조건문]
+numbers = [1,2,3,4,5]
+result1 = [n * 2 for n in numbers if n % 2 == 1]
+print(result1)
