@@ -1,6 +1,9 @@
 # def 함수(), return
 
 # def 함수! 간단한 설명
+from unittest import result
+
+
 def add(a,b) :
     return a + b
 print(add(3,4))
@@ -63,6 +66,14 @@ def f2(x):
 d = f2(10) # f2()함수가 실행되어 35 출력 
 # 하지만, d에 값을 반환하지는 않음
 print(d) # >> None 
+
+
+# 매개변수 지정하여 호출
+def add3(a3,b3) :
+    return a3+b3
+
+result = add3(a3=3,b3=8)
+print(result)
 
 
 # Q. 삼각형의 넓이를 구하는 함수 만들기
