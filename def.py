@@ -74,6 +74,34 @@ def add3(a3,b3) :
 
 result = add3(a3=3,b3=8)
 print(result)
+# >> 11
+
+# 순서에 상관없이 사용도 가능
+result = add3(b3=6, a3=2)
+print(result)
+# >> 8
+
+
+# 입력값이 몇 개가 될지 모를 때
+# def 함수이름(*매개변수) :
+#     <수행할 문장>
+
+# ex)
+def add_many(*args): # 매개 변수 이름 앞에 *을 붙이면 입력값을 모두 튜플로 만들어 줌
+    result = 0
+    for i in args:
+        result = result + i
+    return result
+
+result = add_many(1,2,3)
+print(result)
+# >> 6
+
+result = add_many(1,2,3,4,5,6,7,8,9,10)
+print(result)
+# >> 55
+
+
 
 
 # Q. 삼각형의 넓이를 구하는 함수 만들기
