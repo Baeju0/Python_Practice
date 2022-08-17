@@ -102,6 +102,25 @@ print(result)
 # >> 55
 
 
+# 매개변수, 여러 개의 입력값을 의미하는 매개변수
+def add_mul(choice, *args) :
+    if choice == "add" : # choice가 'add'라면
+        result = 0 # result = 0
+        for i in args : # args 매개변수에 1,2,3,4,5 차례대로 입력
+            result = result + i # 결과값에 +
+    elif choice == "mul" : # mul이라면
+        result = 1 # result = 1
+        for i in args : # args 매개변수에 1,2,3,4,5 입력
+            result = result * i # 결과값에 *
+    return result
+
+result = add_mul('add',1,2,3,4,5)
+print(result)
+# >> 15
+
+result = add_mul('mul',1,2,3,4,5)
+print(result)
+# >> 120
 
 
 # Q. 삼각형의 넓이를 구하는 함수 만들기
