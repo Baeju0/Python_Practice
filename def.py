@@ -123,6 +123,18 @@ print(result)
 # >> 120
 
 
+# 키워드 파라미터 kwargs(Keyword arguments)
+def kk(**kwargs) :
+    print(kwargs)
+kk(a=1)
+# >> {'a':1 }
+kk(name='foo',age=3)
+# >> {'age':3, 'name':'foo'}
+# 이처럼 입력값이 모두 딕셔너리로 만들어져 출력된다
+# **kwargs처럼 매개변수 kwargs는 딕셔너리가 되고 모든 값이
+# key=value 형태의 결괏값이 그 딕셔너리에 저장된다!!
+
+
 # Q. 삼각형의 넓이를 구하는 함수 만들기
 # 함수의 인자로는 삼각형의 밑변과 높이,
 # 반환(return) 값은 삼각형의 넓이
