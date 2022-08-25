@@ -219,13 +219,39 @@ def vartest(a3) :
     a3 = a3 + 1
 
 vartest(3)
-print(a3)
+# print(a3)
+
 # 오류 발생!
 # vartest(3)을 수행하면 vartest함수 안에서 a3는 4가 되지만
 # 함수를 호출한 후 print(a3) 문장은 오류 발생
 # print(a3)에서 입력받아야 하는 a3변수를 찾을 수 없기 때문이다!
 # 함수 안에서 선언한 매개변수는 함수 안에서만 사용될 뿐이지
 # 함수 밖에서는 사용되지 않는다
+
+# 함수 안에서 함수 밖의 변수를 변경하는 방법
+# 1. return 사용하기
+a = 1
+def vartest(a) :
+    a = a +1
+    return a
+
+a = vartest(a)
+print(a)
+# vartest함수는 입력으로 들어온 값에 1을 더한 값을 돌려줌
+# 따라서 a = vartest(a)라고 대입하면 a가 vartest 함수의 결괏값으로 바뀜
+# 물론 vartest 함수 안의 a 매개변수는 함수 밖의 a와 다름!!!
+
+# 2. global 명령어 사용하기
+a = 1
+def vartest():
+    global a
+    a = a+1
+
+vartest()
+print(a)
+# vartest 함수 안의 global a 문장은 함수 안에서 함수 밖의 a변수를 직접 사용하겠다는 뜻!
+# 하지만 global 사용하지 않는게 좋음
+# 함수는 독립적으로 존재하는 것이 좋기 때문!!
 
 
 # Q. 삼각형의 넓이를 구하는 함수 만들기
