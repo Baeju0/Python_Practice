@@ -254,6 +254,23 @@ print(a)
 # 함수는 독립적으로 존재하는 것이 좋기 때문!!
 
 
+# lambda, 함수를 생성할 때 사용하는 예약어로 def와 동일한 역할을 함
+# lambda 매개변수1, 매개변수2, ... : 매개변수를 이용한 표현식
+add = lambda a, b : a+b
+result = add(3,4)
+print(result)
+# >> 7
+# lambda를 사용한 함수
+
+def add(a,b) : 
+    return a+b
+result = add(3,4)
+print(result)
+# >> 7
+# def를 사용한 함수, 위의 lambda로 만든 함수와 동일한 내용이다!
+# lambda 예약어로 만든 함수는 return 명령어가 없어도 결괏값을 돌려준다
+
+
 # Q. 삼각형의 넓이를 구하는 함수 만들기
 # 함수의 인자로는 삼각형의 밑변과 높이,
 # 반환(return) 값은 삼각형의 넓이
