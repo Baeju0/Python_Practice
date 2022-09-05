@@ -67,3 +67,26 @@ print(cal2.add(7))
 def sub(self, num):
     self.result -= num
     return self.result
+
+
+# 사칙연산 가능하게 하는 클래스
+# class FourCal :
+#     pass
+# #  a = FourCal()
+# #  type(a)
+# # <class '__main__.FourCal'>
+
+# a.setdata(4,2)
+# print(a.add())
+# # >> 6
+
+# print(a.mul())
+# # >> 8
+
+# print(a.sub())
+# # >> 2
+
+# print(a.div())
+# # >> 2
+
+# 다시 해보기
