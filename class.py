@@ -90,3 +90,22 @@ def sub(self, num):
 # # >> 2
 
 # 다시 해보기
+class FourCal : # FourCal이라는 클래스
+    # 클래스 안에 구현된 함수(메서드)
+    def setdata(self, first, second): # 매개변수
+        self.first = first
+        self.second = second
+
+a = FourCal()
+a.setdata(4,2) # ?? 3개의 매개변수가 필요한 거 아닌가요?
+# 위처럼 호출하면 setdata의 첫 번째 매개변수 self에는 setdata메서드를
+# 호출한 객체 a가 자동으로 전달됨
+
+# 다른 호출 방법
+a = FourCal()
+FourCal.setdata(a, 4, 2) # 이처럼 클래스 이름.메서드 형태로 호출할 때에는
+# 객체 a를 첫 번째 매개변수 self에 꼭 전달해 주어야 됨
+
+# 반면, 객체.메서드 형태의 호출은 self를 반드시 생략해서 호출함
+a = FourCal
+a.setdata(4, 2)
