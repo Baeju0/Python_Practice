@@ -109,3 +109,33 @@ FourCal.setdata(a, 4, 2) # 이처럼 클래스 이름.메서드 형태로 호출
 # 반면, 객체.메서드 형태의 호출은 self를 반드시 생략해서 호출함
 a = FourCal
 a.setdata(4, 2)
+print(a.first)
+# >> 4
+print(a.second)
+# >> 2
+# self는 전달된 객체 a이므로
+# a.first = 4
+# a.second = 2 로 해석된다
+
+
+# 이번에는 다음과 같이 a,b 객체 만들어보기
+a = FourCal()
+b = FourCal()
+
+# 그리고 a객체의 객체변수 first를 다음과 같이 생성
+a.setdata(4,2)
+print(a.first)
+# >> 4
+
+# 이번에는 b객체의 객체변수 first를 다음과 같이 생성
+b.setdata(3, 7)
+print(b.first)
+# >> 3
+
+# 위와 같이 진행하면 b객체의 객체변수 first에는 값 3이 저장
+# 그렇다면 a 객체의 first는 3으로 변할까 기존 값 4를 유지할까!?
+print(a.first)
+# >> 4
+# a객체의 first값은 b객체의 first 값에 영향받지 않고 원래 값을 유지하고 있다!
+# 클래스로 만든 객체의 객체변수는 다른 객체의 객체변수에 상관없이 독립적인 값을 유지한다!!!!
+# 클래스에서 가장 중요한 부분!!!
