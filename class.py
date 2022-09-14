@@ -139,3 +139,20 @@ print(a.first)
 # a객체의 first값은 b객체의 first 값에 영향받지 않고 원래 값을 유지하고 있다!
 # 클래스로 만든 객체의 객체변수는 다른 객체의 객체변수에 상관없이 독립적인 값을 유지한다!!!!
 # 클래스에서 가장 중요한 부분!!!
+
+
+# 더하기 기능 만들기
+class FourCal() :
+    def setdata(self, first, second) :
+        self.first = first
+        self.second = second
+    def add(self) :
+        result = self.first + self.second
+        return result
+# 위 클래스에 add 메서드 추가
+a = FourCal()
+a.setdata(4,2) # a 객체의 first, second 객체변수에 각각 값 4와 2 저장
+
+# add 메서드 호출
+print(a.add())
+# >> 6
