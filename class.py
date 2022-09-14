@@ -152,7 +152,6 @@ class FourCal() :
 # 위 클래스에 add 메서드 추가
 a = FourCal()
 a.setdata(4,2) # a 객체의 first, second 객체변수에 각각 값 4와 2 저장
-
 # add 메서드 호출
 print(a.add())
 # >> 6
