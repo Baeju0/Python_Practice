@@ -90,51 +90,51 @@ def sub(self, num):
 # # >> 2
 
 # 다시 해보기
-class FourCal : # FourCal이라는 클래스
-    # 클래스 안에 구현된 함수(메서드)
-    def setdata(self, first, second): # 매개변수
-        self.first = first
-        self.second = second
+# class FourCal : # FourCal이라는 클래스
+#     # 클래스 안에 구현된 함수(메서드)
+#     def setdata(self, first, second): # 매개변수
+#         self.first = first
+#         self.second = second
 
-a = FourCal()
-a.setdata(4,2) # ?? 3개의 매개변수가 필요한 거 아닌가요?
+# a = FourCal()
+# a.setdata(4,2) # ?? 3개의 매개변수가 필요한 거 아닌가요?
 # 위처럼 호출하면 setdata의 첫 번째 매개변수 self에는 setdata메서드를
 # 호출한 객체 a가 자동으로 전달됨
 
 # 다른 호출 방법
-a = FourCal()
-FourCal.setdata(a, 4, 2) # 이처럼 클래스 이름.메서드 형태로 호출할 때에는
-# 객체 a를 첫 번째 매개변수 self에 꼭 전달해 주어야 됨
+# a = FourCal()
+# FourCal.setdata(a, 4, 2) # 이처럼 클래스 이름.메서드 형태로 호출할 때에는
+# # 객체 a를 첫 번째 매개변수 self에 꼭 전달해 주어야 됨
 
-# 반면, 객체.메서드 형태의 호출은 self를 반드시 생략해서 호출함
-a = FourCal
-a.setdata(4, 2)
-print(a.first)
-# >> 4
-print(a.second)
-# >> 2
-# self는 전달된 객체 a이므로
-# a.first = 4
-# a.second = 2 로 해석된다
+# # 반면, 객체.메서드 형태의 호출은 self를 반드시 생략해서 호출함
+# a = FourCal
+# a.setdata(4, 2)
+# print(a.first)
+# # >> 4
+# print(a.second)
+# # >> 2
+# # self는 전달된 객체 a이므로
+# # a.first = 4
+# # a.second = 2 로 해석된다
 
 
-# 이번에는 다음과 같이 a,b 객체 만들어보기
-a = FourCal()
-b = FourCal()
+# # 이번에는 다음과 같이 a,b 객체 만들어보기
+# a = FourCal()
+# b = FourCal()
 
-# 그리고 a객체의 객체변수 first를 다음과 같이 생성
-a.setdata(4,2)
-print(a.first)
-# >> 4
+# # 그리고 a객체의 객체변수 first를 다음과 같이 생성
+# a.setdata(4,2)
+# print(a.first)
+# # >> 4
 
-# 이번에는 b객체의 객체변수 first를 다음과 같이 생성
-b.setdata(3, 7)
-print(b.first)
-# >> 3
+# # 이번에는 b객체의 객체변수 first를 다음과 같이 생성
+# b.setdata(3, 7)
+# print(b.first)
+# # >> 3
 
-# 위와 같이 진행하면 b객체의 객체변수 first에는 값 3이 저장
-# 그렇다면 a 객체의 first는 3으로 변할까 기존 값 4를 유지할까!?
-print(a.first)
+# # 위와 같이 진행하면 b객체의 객체변수 first에는 값 3이 저장
+# # 그렇다면 a 객체의 first는 3으로 변할까 기존 값 4를 유지할까!?
+# print(a.first)
 # >> 4
 # a객체의 first값은 b객체의 first 값에 영향받지 않고 원래 값을 유지하고 있다!
 # 클래스로 만든 객체의 객체변수는 다른 객체의 객체변수에 상관없이 독립적인 값을 유지한다!!!!
@@ -149,9 +149,24 @@ class FourCal() :
     def add(self) :
         result = self.first + self.second
         return result
+    # 곱하기, 빼기, 나누기 기능 추가하기
+    def mul(self) :
+        result = self.first * self.second
+        return result
+    def sub(self) :
+        result = self.first - self.second
+        return result
+    def div(self) :
+        result = self.first / self.second
+        return result
 # 위 클래스에 add 메서드 추가
 a = FourCal()
+b = FourCal()
 a.setdata(4,2) # a 객체의 first, second 객체변수에 각각 값 4와 2 저장
+b.setdata(3,8)
+
 # add 메서드 호출
 print(a.add())
 # >> 6
+print(b.sub)
+# >> -5
