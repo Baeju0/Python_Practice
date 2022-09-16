@@ -1,6 +1,9 @@
 # class
 
 # 계산기의 '더하기' 기능 구현 코드
+from inspect import Traceback
+
+
 result = 0
 
 def add(num) : # add함수는 매개변수에 받은 값을 이전에 계산한 결괏값에 더한 후 돌려주는 함수
@@ -170,3 +173,37 @@ print(a.add())
 # >> 6
 print(b.sub)
 # >> -5
+
+
+# 생성자(Constructor)
+# 따로 공부
+
+
+# 클래스 상속
+
+# 클래스를 상속하기 위해서는 아래처럼 사용
+# class 클래스 이름(상속할 클래스 이름)
+class MoreFourCal(FourCal) :
+    pass
+
+# MoreFourCal 클래스는 FourCal 클래스를 상속했으므로 FourCal 클래스의 모든 기능을 사용할 수 있다!
+a = MoreFourCal(4,2)
+a.add()
+# >> 6
+a.mul()
+# >> 8
+a.sub()
+# >> 2
+a.div()
+# >> 2
+# 상속은 기존 클래스를 변경하지 않고 기능을 추가하거나 기존 기능을 변경하려고 할 때 사용한다!
+
+# FourCal 클래스에 a의 b제곱을 구할 수 있는 기능 추가하기
+class MoreFourCal2(FourCal) :
+    def pow(self):
+        result = self.first ** self.second
+        return result
+
+a = MoreFourCal2(4,2)
+a.pow()
+# >> 16
