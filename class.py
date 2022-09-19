@@ -207,3 +207,43 @@ class MoreFourCal2(FourCal) :
 a = MoreFourCal2(4,2)
 a.pow()
 # >> 16
+
+
+# 클래스 변수
+class Family :
+    lastname = "김"
+
+print(Family.lastname)
+# >> 김
+# 클래스 변수는 위 예와 같이 클래스이름.클래스변수 로 사용할 수 있다!
+
+# 또는 다음과 같이 Family 클래스로 만든 객체를 통해서도 클래스 변수를 사용할 수 있다
+a = Family()
+b = Family()
+print(a.lastname)
+# >> 김
+print(a.lastname)
+# >> 김
+
+# 만약 Family 클래스의 lastnmae을 다음과 같이 바꾼다면?
+Family.lastname = "박"
+print(a.lastname)
+# >> 박
+print(b.lastname)
+# >> 박
+# 클래스 변수는 클래스로 만든 모든 객체에 공유된다는 특징이 있다!
+
+# 위 예제의 a.lastname을 다음과 같이 변경한다면?
+a.lastname = "배"
+print(a.lastname)
+# >> 배
+# Family 클래스의 lastname이 바뀌는 것이 아닌 a객체에 lastname이라는 객체변수가 새롭게 생성된다!
+# 즉, 객체변수는 클래스 변수와 동일한 이름으로 생성할 수 있다!
+# ※ a.lastname은 Family 클래스의 lastname이 아닌 객체 a의 객체변수 lastname을 가리킨다!
+
+print(Family.lastname)
+# >> 박
+print(b.lastname)
+# >> 박
+# 위와 같이 a.lastname 객체변수를 생성했더라도 Family 클래스의 lastname과는
+# 상관이 없다! (Family 클래스의 lastname 값은 변하지 않음)
