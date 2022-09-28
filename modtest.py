@@ -22,4 +22,12 @@ print(result)
 # print(mod2.add(3,4))
 # >> 7
 
-# ? 다시 시도하기
+
+# 2. PYTHONPATH 환경 변수 사용
+# cmd에서
+# set PYTHONPATH=mod2.py파일 경로
+# 위와 같이 설정하면 별도의 모듈 추가 작업 없이 mod2 모듈을 불러와 사용 가능!
+
+# import mod2
+# print(mod2.add(3,4))
+# >> 7
